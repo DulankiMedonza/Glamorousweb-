@@ -3,68 +3,241 @@
 <head>
 <style>
 
-	/*Background Image*/
-        body
-        {
-		padding: 0;
-		margin: 0;
-		background-color: floralwhite;
-        }
 
-        .slider-frame
-        {
-		overflow: hidden;
-		height:800px;
-		width:1200;
-		margin-left:500px;
-		margin-top: 20px;
-        }
+	/*Navigation Bar*/
+ul 
+{
+	list-style-type: none;
+	position: relative;
+	overflow: auto;
+	background-color: #F4C2C2;
+}
+
+li 
+{
+	float: left;
+}
+
+li a 
+{
+	font-size:22px;
+	display: block;
+	color: black;
+	padding: 2px 25px;
+	text-decoration: none;
+}
 
 
-	@-webkit-keyframes slide_animation
-	{
-		0% {left:0px;}
-		10% {left:0px;}
-		20% {left:1200px;}
-		30% {left:1200px;}
-		40% {left:2400px;}
-		50% {left:2400px;}
-		60% {left:1200px;}
-		70% {left:1200px;}
-		80% {left:0px;}
-		90% {left:0px;}
-		100% {left:0px;}
-	}
+li a:hover 
+{
+	background-color: black;
+	color: white;
+}
+
+.navbar 
+{	
+	position: relative;
+	overflow: hidden;
+	height:450px;
+	width:100%;
+}
+
+
+.dropdown .dropbtn 
+{
+	font-family: Comic Sans MS, cursive;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: inherit;
+	margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+	background-color: white;
+}
+
+.dropdown-content 
+{
+	display: none;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content 
+{
+	display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column 
+{
+	float: left;
+	width: 31.56%;
+	padding: 10px;
+	background-color:#FFE5B4;
+	height: 200px;
+	text-align:center;
+	position:relative;
+}
+
+.column a 
+{
+	position:relative;
+	float: none;
+	color: black;
+	padding: 16px;
+ 	text-decoration: none;
+  	display: block;
+  	text-align:center;
+}
+
+.column a:hover 
+{
+	background-color: #F4C2C2;
+	color : brown;
+}
+
+	/* Clear floats after the columns */
+.row:after 
+{
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+
+	/*Background*/
+body
+{	
+	padding: 0;
+	margin: 0;
+	background-color: floralwhite;	
+}
        
-        .slide-images
-        {
-            width: 3600px;
-            height: 800px;
-            margin: 0 0 0 -2400px;
-            position: relative;
-		
+.slider-frame
+{
+	position:relative;
+      overflow: hidden;
+	height:800px;
+	width:1200;
+	margin-left:200px;
+	margin-top: -400px;
+}
+
+@-webkit-keyframes slide_animation
+{
+	0% {left:0px;}
+	10% {left:0px;}
+	20% {left:1200px;}
+	30% {left:1200px;}
+	40% {left:2400px;}
+	50% {left:2400px;}
+	60% {left:1200px;}
+	70% {left:1200px;}
+	80% {left:0px;}
+	90% {left:0px;}
+	100% {left:0px;}
+}
+       
+.slide-images
+{
+	width: 3600px;
+      height: 800px;
+	margin: 0 0 0 -2400px;
+	position: relative;
 		-webkit-animation-name: slide_animation;
 		-webkit-animation-duration: 15s;
 		-webkit-animation-iteration-count : infinite;
 		-webkit-animation-direction: alternate;
 		-webkit-animation-play-state: running;
-        }
+}
        
-       .image-container
-        {
-            height: 500px;
-		width: 1200px;
-		position: relative;
-		float: right;
-        }
+.image-container
+{
+	height: 500px;
+	width: 1100px;
+	position: relative;
+	float: right;
+}
 
+
+.parent {
+  width: 450px; 
+  height: 450px;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-position: fixed;
+  background-size: cover;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.15);
+display: block;
+}
 
 </style>
+
+
 <body>
-    <div class="slider-frame">
-        <div class="slide-images">
+
+
+<ul>
+	<li><a href="pg1.html">HOME</a></li>
+	<li>
+</li>
+	<li style="float:right"><a href="registrationform.html">SIGN IN</a></li>
+	<li style="float:right"><a href="about.html">ABOUT	</a></li>
+</ul>
+
+
+<div class="navbar">
+
+  <div class="dropdown">
+    <button class="dropbtn">SHOP NOW
+      
+    </button>
+    <div class="dropdown-content">
+  
+      <div class="row">
+        <div class="column">
+          
+          <a href="all.html#workwear">WORK WEAR</a>
+          <a href="all.html#dresses">DRESSES</a>
+          <a href="all.html#linen">LINEN</a>
+        </div>
+        <div class="column">
+        
+          <a href="all.html#tops">TOPS</a>
+          <a href="all.html#casuals">CASUALS</a>
+          <a href="all.html#sportswear">SPORTS WEAR</a>
+        </div>
+        <div class="column">
+          
+          <a href="all.html#denims">DENIMS</a>
+          <a href="all.html#pants">PANTS</a>
+          <a href="all.html">ALL</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+<div class="slider-frame">
+	<div class="slide-images">
 		<div class="image-container">
-            	<img src="photo8.jpg">
+			<img src="photo8.jpg">
 		</div>
 		<div class="image-container">
             	<img src="photo13.jpg">
@@ -72,11 +245,51 @@
 		<div class="image-container">
             	<img src="photo12.jpg">
 		</div>
+	</div>
+</div>
 
-        </div>
-    </div>
 
 
+<br><br><br><br>
+
+<h1 align = "center">NEW ARRIVALS</h1>
+
+<br><br>
+
+
+
+<table align="center" border="0" cellpadding="20">
+
+<tr>
+<td><div class="parent">
+  <div class="child"><img src="phototop7.jpg" height="450" width="450">
+</div>
+</div>
+<br>
+	<h2 align ="center"> Casual Top </h2>
+	<p align ="center" style="font-size:20px;"> LKR 1,450.00</p>
+</td>
+<td><div class="parent">
+  <div class="child"><img src="linen-dress-5.jpg" height="450" width="450" >
+</div>
+</div>
+<br> 
+	<h2 align ="center"> Linen-Dress</h2>
+	<p align ="center" style="font-size:20px;"> LKR 2,030.00</p>
+</td>
+<td><div class="parent">
+  <div class="child"><img src="jeans13.jpg" height="450" width="450" >
+</div>
+</div>
+<br> 
+	<h2 align ="center">Patched Jean</h2>
+	<p align ="center" style="font-size:20px;"> LKR 2,580.00</p>
+</td>
+</tr>
+
+</table>
+
+<p align ="right" style="font-size:20px;"><a href="all.html">VIEW MORE + </p></a>
 
 </body>
 </html>

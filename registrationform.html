@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>
+	REGISTRATION PAGE
+</title>
+
+<style>
+
+
+	/*Navigation Bar*/
+ul 
+{
+	list-style-type: none;
+	position: relative;
+	overflow: auto;
+	background-color: #F4C2C2;
+}
+
+li 
+{
+	float: left;
+}
+
+li a 
+{
+	font-size:22px;
+	display: block;
+	color: black;
+	padding: 2px 25px;
+	text-decoration: none;
+}
+
+
+li a:hover 
+{
+	background-color: black;
+	color: white;
+}
+
+
+	form
+	{
+		width: 700px;
+		margin : auto;
+	}
+
+	input[type=text],input[type=number],input[type=password]
+	{
+		width: 80%;
+		padding: 15px;
+		border: 1px solid black;
+	}
+input[type=submit] 
+{
+	background-color: #04AA6D;
+	color: white;
+	padding: 10px 30px;
+	border: 1;
+	cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+	background-color: #45a049;
+}
+
+	label 
+	{
+		padding: 10px;
+		display: inline-block;
+	}
+
+
+	.align 
+	{
+		float: right;
+		width: 60%;
+		margin-top: 6px;
+	}
+	
+	.space:after 
+	{
+		content: "";
+		display: table;
+		clear: both;
+
+	}
+
+	.main 
+	{
+		background-color: floralwhite;
+		padding: 15px;
+		width: 1430px;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+.table2
+{
+	background-color: floralwhite;
+	padding: 15px;
+	width: 1430px;
+	margin : auto;
+}
+
+</style>
+</head>
+
+<body bgcolor="#FFE5B4">
+
+
+<ul>
+	<li><a href="pg1.html">HOME</a></li>
+	<li>
+</li>
+	<li style="float:right"><a href="registrationform.html">SIGN IN</a></li>
+	<li style="float:right"><a href="about.html">ABOUT	</a></li>
+</ul>
+
+
+<h1 align="center"> -REGISTRATION FORM- </h1>
+
+<div class="main">
+<table border="1">
+
+<tr>
+<td>
+
+<h2 align="center">ALREADY REGISTERED</h2>
+
+<form name="input" action="submittedform" method="get" target="_blank">
+
+<div class="space">
+	<label for="uname">User Name :</label>
+	<div class="align">
+		<input type="text" id="name" name="name">
+	</div>
+</div>
+
+
+<div class="space">
+	<label for="email">Email address :</label>
+	<div class="align">
+		<input type="text" id="email" name="email" placeholder="XXX@gmail.com">
+	</div>
+</div>
+
+
+<div class="space">
+	<label for="password">Enter password:</label>
+	<div class="align">
+		<input type="password" id="enterpassword">
+	</div>
+</div>
+
+</div>
+
+<br><br>
+<div class="space">
+	<center>
+		<input type="submit" value="SIGN IN">
+	</center>
+	</div>
+</div>
+
+
+</form>
+
+</td>
+
+
+<td>
+<form name="input" action="submittedform" method="get" target="_blank">
+
+<h2 align="center">NEW MEMBER</h2>
+
+<div class="space">
+	<label for="uname">User Name :</label>
+	<div class="align">
+		<input type="text" id="name" name="name">
+	</div>
+</div>
+
+
+<div class="space">
+	<label for="password">Enter a password for your account :</label>
+	<div class="align">
+		<input type="password" id="enteredpassword">
+	</div>
+</div>
+
+
+
+<div class="space">
+	<label for="email">Email address :</label>
+	<div class="align">
+		<input type="text" id="email" name="email" placeholder="XXX@gmail.com">
+	</div>
+</div>
+
+
+
+<div class="space">
+	<label for="code">City/Postal Code :</label>
+	<div class="align">
+		<input type="number" id="quantity" name="quantity">
+	</div>
+</div>
+
+
+<div class="space">
+	<label for="phone">Contact Number:</label>
+	<div class="align">
+		<input type="tel" id="phone" name="phone" placeholder="+XX-XXX-XXX-XXX-XXX">
+	</div>
+</div>
+
+
+
+<div class="space">
+	<label for="province">Province :</label>
+	<div class="align">
+		<select province="province">
+		<option value="Western">Western Province</option>
+		<option value="Central">Central Province</option>
+		<option value="Southern">Southern Province</option>
+		<option value="Uva">Uva Province</option>
+		<option value="Sabaragamuwa">Sabaragamuwa Province</option>
+		<option value="North Western">North Western Province</option>
+		<option value="North Central">North Central Province</option>
+		<option value="Nothern">Nothern Province</option>
+		<option value="Eastern">Eastern Province</option>
+		</select>
+	</div>
+</div>
+
+
+<div class="space">
+	<label for="address">Address :</label>
+	<div class="align">
+		<textarea rows="3" cols="30" name="address" form="useform"></textarea>
+	</div>
+</div>
+
+
+<input type="checkbox" name="agreement" value="agreement"required>
+I agree to terms and conditions
+<br>
+
+
+
+<br>
+
+
+
+<div class="space">
+	<center>
+		<input type="submit" value="SIGN UP">
+	</center>
+	</div>
+</div>
+
+
+</div>
+
+
+</form>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+
+<div class="table2">
+<table border="0" align="center" width="100%" cellpadding="10">
+
+
+	<th align="left">SERVICES</th>
+	<th align="left">INFORMATION</th>
+	<th align="right">GET IN TOUCH</th>
+
+	<tr>
+		<td>ONLINE SHOPPING </td>
+		<td>ABOUT US </td>
+		<td align="right">gmail </td>
+	</tr>
+
+	<tr>
+		<td>PRIVACY POLICY</td>
+		<td>CONTACT </td>
+		<td align="right">phone </td>
+	</tr>
+
+
+	<tr>
+		<td>TERMS & CONDITIONS</td>
+		<td>LOCATION</td>
+		<td align="right">fax </td>
+	</tr>
+		
+
+
+
+</table>
+
+</div>
+</body>
+</html>
